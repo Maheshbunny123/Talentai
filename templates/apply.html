@@ -6,7 +6,7 @@
 <title>Apply – TalentAI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/static/css/main.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
 
@@ -101,6 +101,6 @@
   <div>TalentAI &copy; 2025 · Built with Flask + Logistic Regression</div>
 </footer>
 
-<script src="/static/js/apply.js"></script>
+<script src="{{ url_for('static', filename='js/apply.js') }}"></script>
 </body>
 </html>
